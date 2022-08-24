@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scal=1.0">
+    <title>ホーム</title>
+    <link rel="stylesheet" type="text/css" href="lib/video-js.css" />
+    <link rel="stylesheet" type="text/css" href="lib/Style.css" />
+   
+    <script src="lib/video.js"></script>
+    <script src="lib/dash.all.debug.js"></script>
+    <script src="lib/videojs-dash.js"></script>
+    <script src="lib/load.js"></script>    
+    <script src="保存方法1.js"></script>
+    <script src="保存方法2.js"></script>
+    <script src="保存方法3.js"></script>   
+
+    <script src="lib/console-ban.min.js"></script>
+    <script>
+        // default options
+        ConsoleBan.init()
+        // custom options
+        ConsoleBan.init({
+            redirect: '/404'
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <div id="load">
+        <div id="load_logo"><img src="image/mark.jpg" alt="Anything_Save" class="fadeUp"></div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div id="site_logo">
+                <h1><a href="https://anythingsave.github.io/Apple/"><img src="image/logo.png"></a></h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="error">
+        <img src="image/Erro.png" />
+    </div>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="https://anythingsave.github.io/Web/">ホーム</a></li>
+                <li><a href="#">所持リスト</a></li>
+                <li><a href="#">今週の新作</a></li>
+                <li><a href="https://forms.gle/4HSXYgSV494SjqTu9">申し込み</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="video-content">
+            <video id="hls_video1" class="video-js vjs-default-skin vjs-big-play-centered"></video> <h1 class="video-title">代行の例</h1>            
+        </div>
+    </div>
+    <script src="index..js"></script>
+    
+
+
+
+
+    <div class="contents">
+        <video id="video1" class="video-js vjs-default-skin vjs-big-play-centered"></video>
+        <h1 class="heading">代行の例</h1>
+        
+    </div>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
