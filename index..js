@@ -14,16 +14,16 @@
 
     ready(() => {
         let video = videojs('hls_video1', {
-            width: 1247, // •
-            height: 623.5, // ‚‚³
-            autoplay: false, // Ž©“®Ä¶
-            loop: false, // ƒ‹[ƒvÄ¶
-            controls: true, // ƒRƒ“ƒgƒ[ƒ‹§Œä•\Ž¦
-            preload: 'auto', // “Ç‚Ýž‚Ý§Œä
+            width: 1247, // å¹…
+            height: 623.5, // é«˜ã•
+            autoplay: false, // è‡ªå‹•å†ç”Ÿ
+            loop: false, // ãƒ«ãƒ¼ãƒ—å†ç”Ÿ
+            controls: true, // ã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ«åˆ¶å¾¡è¡¨ç¤º
+            preload: 'auto', // èª­ã¿è¾¼ã¿åˆ¶å¾¡
         });
         video.src({
             type: 'application/dash+xml',
-            src: 'stream/mpd/dash.mpd',
+            src: 'stream/mpd/master.mpd
             keySystemOptions: [{
                 name: 'com.widevine.alpha',
                 options: {
