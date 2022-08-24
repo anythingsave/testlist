@@ -23,7 +23,7 @@
         });
         video.src({
             type: 'application/dash+xml',
-            src: 'stream/mpd/dash.mpd',
+            src: 'stream/mpd/master.mpd',
             keySystemOptions: [{
                 name: 'com.widevine.alpha',
                 options: {
