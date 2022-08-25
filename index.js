@@ -22,8 +22,8 @@
             preload: 'auto', // 読み込み制御
         });
         video.src({
-            type: 'application/vnd.apple.mpegurl',
-            src: 'stream/m3u8/master.m3u8',
+            type: 'application/dash+xml',
+            src: 'stream/mpd/master.mpd',
             keySystemOptions: [{
                 name: 'com.widevine.alpha',
                 options: {
