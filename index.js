@@ -27,7 +27,7 @@
         });
         video.src({
             type: 'application/x-mpegURL',
-            src: 'stream/m3u8/master.m3u8',
+            src: 'stream/mpd/master.m3u8',
 
             keySystemOptions: [{
                 name: 'com.widevine.alpha',
