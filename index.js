@@ -22,14 +22,9 @@
             preload: 'auto', // 読み込み制御
         });
         video.src({
-            type: 'application/dash+xml',
-            src: 'stream/mpd/master.mpd',
-            keySystemOptions: [{
-                name: 'com.widevine.alpha',
-                options: {
-                    serverURL: 'https://license.uat.widevine.com/cenc/getcontentkey/widevine_test'
-                }
-            }]
+            type: 'application/x-mpegURL',
+            src: 'stream/m3u8/master.m3u8',
+
         });
 
         video.on(['loadstart', 'loadedmetadata', 'loadeddata', 'play', 'playing', 'pause', 'suspend', 'seeking', 'seeked', 'waiting', 'canplay', 'canplaythrough', 'ratechange', 'ended', 'emptied', 'error', 'abort'], (e) => {
