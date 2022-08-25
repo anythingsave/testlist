@@ -14,6 +14,11 @@
 
     ready(() => {
         let video = videojs('hls_video1', {
+
+            userActions: {
+                doubleClick: false
+            },
+
             width: 1247, // •
             height: 623.5, // ‚‚³
             autoplay: false, // Ž©“®Ä¶
@@ -22,14 +27,9 @@
             preload: 'auto', // “Ç‚Ýž‚Ý§Œä
         });
         video.src({
-            type: 'application/dash+xml',
-            src: 'stream/mpd/master.mpd',
-            keySystemOptions: [{
-                name: 'com.widevine.alpha',
-                options: {
-                    serverURL: 'https://license.uat.widevine.com/cenc/getcontentkey/widevine_test'
-                }
-            }]
+            type: 'application/x-mpegURL',
+            src: 'stream/mpd/master.m3u8',
+
         });
 
         video.on(['loadstart', 'loadedmetadata', 'loadeddata', 'play', 'playing', 'pause', 'suspend', 'seeking', 'seeked', 'waiting', 'canplay', 'canplaythrough', 'ratechange', 'ended', 'emptied', 'error', 'abort'], (e) => {
@@ -46,4 +46,3 @@
         });
     });
 }
-

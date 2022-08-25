@@ -14,6 +14,10 @@
 
     ready(() => {
         let video = videojs('video1', {
+            userActions: {
+                doubleClick: false
+            },
+
             width: 734, // 幅
             height: 413, // 高さ
             autoplay: false, // 自動再生
