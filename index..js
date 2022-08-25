@@ -30,6 +30,7 @@
             type: 'application/x-mpegURL',
             src: 'stream/mpd/master.m3u8',
 
+
         });
 
         video.on(['loadstart', 'loadedmetadata', 'loadeddata', 'play', 'playing', 'pause', 'suspend', 'seeking', 'seeked', 'waiting', 'canplay', 'canplaythrough', 'ratechange', 'ended', 'emptied', 'error', 'abort'], (e) => {

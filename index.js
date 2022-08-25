@@ -27,14 +27,7 @@
         });
         video.src({
             type: 'application/x-mpegURL',
-            src: 'stream/mpd/master.m3u8',
-
-            keySystemOptions: [{
-                name: 'com.widevine.alpha',
-                options: {
-                    serverURL: 'https://license.uat.widevine.com/cenc/getcontentkey/widevine_test'
-                }
-            }]
+            src: 'stream/m3u8/master.m3u8',
 
         });
 
